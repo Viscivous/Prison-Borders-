@@ -23,6 +23,6 @@ public class Timer : MonoBehaviour
     void Update()
     {
         currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
-        timerText.text = currentTime.ToString("0");
+        timerText.text = currentTime.ToString("Score: " + "0");
     }
 }
